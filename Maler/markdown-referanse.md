@@ -3,37 +3,45 @@
 Dette dokumentet viser alle de vanligste Markdown-elementene og syntaks.
 
 ## Sette opp innholdsfortegnelse med linking til elementer.
-- [Overskrifter](#overskrifter)
-- [Tekstformatering](#tekstformatering)
-- [Lister](#lister)
+- [Komplett Markdown Referanse](#komplett-markdown-referanse)
+  - [Sette opp innholdsfortegnelse med linking til elementer.](#sette-opp-innholdsfortegnelse-med-linking-til-elementer)
+  - [Overskrifter](#overskrifter)
+- [Overskrift nivå 1](#overskrift-nivå-1)
+  - [Overskrift nivå 2](#overskrift-nivå-2)
+    - [Overskrift nivå 3](#overskrift-nivå-3)
+      - [Overskrift nivå 4](#overskrift-nivå-4)
+        - [Overskrift nivå 5](#overskrift-nivå-5)
+          - [Overskrift nivå 6](#overskrift-nivå-6)
+  - [Tekstformatering](#tekstformatering)
+  - [Lister](#lister)
     - [Unummererte lister](#unummererte-lister)
     - [Nummererte lister](#nummererte-lister)
     - [Oppgavelister](#oppgavelister)
-- [Lenker](#lenker)
-- [Bilder](#bilder)
-- [Sitater](#sitater)
-- [Kode](#kode)
+  - [Lenker](#lenker)
+  - [Bilder](#bilder)
+  - [Sitater](#sitater)
+  - [Kode](#kode)
     - [Inline kode](#inline-kode)
     - [Kodeblokker](#kodeblokker)
     - [Innrykket kodeblokk](#innrykket-kodeblokk)
-- [Horisontale linjer](#horisontale-linjer)
-- [Tabeller](#tabeller)
+  - [Horisontale linjer](#horisontale-linjer)
+  - [Tabeller](#tabeller)
     - [Tabell med justering](#tabell-med-justering)
-- [Fotnoter](#fotnoter)
-- [Definisjons-lister](#definisjons-lister)
-- [HTML i Markdown](#html-i-markdown)
-- [Escape-tegn](#escape-tegn)
-- [Emojis (GitHub Flavored Markdown)](#emojis)
-- [Ankerlenker](#ankerlenker)
-    - [Min Seksjon](#min-anker)
-- [Kombinerte elementer](#kombinerte-elementer)
+  - [Fotnoter](#fotnoter)
+  - [Definisjons-lister](#definisjons-lister)
+  - [HTML i Markdown](#html-i-markdown)
+  - [Escape-tegn](#escape-tegn)
+  - [Emojis (GitHub Flavored Markdown) {#emojis}](#emojis-github-flavored-markdown-emojis)
+  - [Ankerlenker](#ankerlenker)
+    - [Min Seksjon {#min-anker}](#min-seksjon-min-anker)
+  - [Kombinerte elementer](#kombinerte-elementer)
     - [Liste med kode](#liste-med-kode)
     - [Liste med sitater](#liste-med-sitater)
-    - [Tabell med lenker og formatering](#tabell-lenker)
-- [Avanserte tips](#avanserte-tips)
+    - [Tabell med lenker og formatering {#tabell-lenker}](#tabell-med-lenker-og-formatering-tabell-lenker)
+  - [Avanserte tips](#avanserte-tips)
     - [Linjeskift](#linjeskift)
     - [Unnvikende tekst](#unnvikende-tekst)
-- [Vise Mappestruktur](#vise-mappestruktur)
+  - [Vise Mappestruktur](#vise-mappestruktur)
 
 
 ---
@@ -369,7 +377,7 @@ ___
 **Syntaks:**
 ```
 | Kolonne 1 | Kolonne 2 | Kolonne 3 |
-|-----------|-----------|-----------|
+| --------- | --------- | --------- |
 | Rad 1     | Data      | Mer data  |
 | Rad 2     | Data      | Mer data  |
 ```
@@ -377,7 +385,7 @@ ___
 **Resultat:**
 
 | Kolonne 1 | Kolonne 2 | Kolonne 3 |
-|-----------|-----------|-----------|
+| --------- | --------- | --------- |
 | Rad 1     | Data      | Mer data  |
 | Rad 2     | Data      | Mer data  |
 
@@ -386,17 +394,17 @@ ___
 **Syntaks:**
 ```
 | Venstrejustert | Sentrert | Høyrejustert |
-|:---------------|:--------:|-------------:|
-| Venstre        | Midten   | Høyre        |
-| Tekst          | Tekst    | Tekst        |
+| :------------- | :------: | -----------: |
+| Venstre        |  Midten  |        Høyre |
+| Tekst          |  Tekst   |        Tekst |
 ```
 
 **Resultat:**
 
 | Venstrejustert | Sentrert | Høyrejustert |
-|:---------------|:--------:|-------------:|
-| Venstre        | Midten   | Høyre        |
-| Tekst          | Tekst    | Tekst        |
+| :------------- | :------: | -----------: |
+| Venstre        |  Midten  |        Høyre |
+| Tekst          |  Tekst   |        Tekst |
 
 [⬆️](#komplett-markdown-referanse)
 
@@ -594,19 +602,19 @@ Du kan lenke til [Min Seksjon](#min-anker)
 
 **Syntaks:**
 ```
-| Funksjon | Syntaks | Eksempel |
-|:---------|:-------:|---------:|
-| **Fet** | `**tekst**` | **eksempel** |
-| *Kursiv* | `*tekst*` | *eksempel* |
+| Funksjon                                                                                   |    Syntaks     |                                                                                       Eksempel |
+| :----------------------------------------------------------------------------------------- | :------------: | ---------------------------------------------------------------------------------------------: |
+| **Fet**                                                                                    |  `**tekst**`   |                                                                                   **eksempel** |
+| *Kursiv*                                                                                   |   `*tekst*`    |                                                                                     *eksempel* |
 | [Lenke](https://github.com/MarcusBrustad/Databasefaget-for-nettstudentene/tree/main/Maler) | `[tekst](url)` | [Klikk her](https://github.com/MarcusBrustad/Databasefaget-for-nettstudentene/tree/main/Maler) |
 ```
 
 **Resultat:**
 
-| Funksjon | Syntaks | Eksempel |
-|:---------|:-------:|---------:|
-| **Fet** | `**tekst**` | **eksempel** |
-| *Kursiv* | `*tekst*` | *eksempel* |
+| Funksjon                                                                                   |    Syntaks     |                                                                                       Eksempel |
+| :----------------------------------------------------------------------------------------- | :------------: | ---------------------------------------------------------------------------------------------: |
+| **Fet**                                                                                    |  `**tekst**`   |                                                                                   **eksempel** |
+| *Kursiv*                                                                                   |   `*tekst*`    |                                                                                     *eksempel* |
 | [Lenke](https://github.com/MarcusBrustad/Databasefaget-for-nettstudentene/tree/main/Maler) | `[tekst](url)` | [Klikk her](https://github.com/MarcusBrustad/Databasefaget-for-nettstudentene/tree/main/Maler) |
 
 [⬆️](#komplett-markdown-referanse)
@@ -682,7 +690,7 @@ root/
 │  ├─ tools/
 ```
 
-[![Bilde av ascii-tree-generator](ascii-tree.jpg)](https://ascii-tree-generator.com/)  
+[![Bilde av ascii-tree-generator](ascii-tree.jpg)](https://ascii-tree-generator.com/ "Ascii-tree-generator")  
 *Klikk på bildet for å komme til nettsiden*
 
 
